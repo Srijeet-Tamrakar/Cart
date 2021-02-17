@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .9)
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
+
+.nav ul{
+    margin:0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding:.5em;
+    color:white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav a:hover{
+    background-color: black;
+    color:aqua;
+    
+}
+
+.main_nav{
+    text-align: center;
+    font-size: x-large;
+    border-bottom:1px solid rgba(255, 255, 255, .3);
+}
+
+.main_nav li{
+    padding:0 3%;
+}
+
+.main_header{
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url('../images/Album 1.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band_name{
+    text-align: center;
+    padding:0;
+    font-family: 'Satisfy', cursive;
+    color:white;
+}
+
+.band_name_large{
+    font-size:5em;
+}
+
+.content{
+    margin:1em;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.section_header{
+    font-family: 'Satisfy';
+    color:black;
+    text-align: center;
+    font-size: 2em;
+}
+
+.about_image{
+    float: left;
+    width: 400px;
+    height: 200px;
+    padding:0 1%;    
+}
+
+.main_footer{
+    background-color: rgba(0, 0, 0, .9);
+    padding:.25em 0;
+}
+
+.main_footer_container ul{
+    flex-grow: 1;
+    text-align:end;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding:.67em;
+    cursor: pointer;
+}
+
+.btn_header{
+    display: block;
+    margin: 1em auto;
+    color:white;
+    border: 2px solid aqua;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius:0;
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn_header:hover{
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.btn_play{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding:0;
+    font-size: 3em;
+    color: aqua;
+}
+
+.tour_row{
+    border-bottom : 1px solid black;
+    margin-bottom: 1px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.tour_row:last-child{
+    border-bottom: none;
+}
+
+.tour_item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour_date{
+    width:20%
+}
+
+.tour_city{
+    width:30%;
+}
+
+.tour_drink{
+    width: 30%;
+}
+
+.tour_btn{
+    max-width: 20%;
+}
+
+.btn_primary{
+    color:white;
+    background-color: rgb(4, 162, 224);
+    border:none;
+    border-radius: .3em;
+}
+
+.btn_primary:hover{
+    background-color: rgb(0, 53, 228); 
+}
+
+.btn_danger{
+    color:white;
+    background-color: rgb(248, 15, 15);
+    border:none;
+    border-radius: .3em;
+}
+
+.btn_danger:hover{
+    background-color: rgb(192, 20, 20); 
+}
+
+.shop_item{
+    margin: 30px;
+}
+
+.shop_item_title{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.shop_item_image{
+    height:200px;
+}
+
+.shop_item_details{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.shop_item_price{
+    flex-grow: 1;
+}
+
+.shop_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart_column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right:1.5em;
+    padding-bottom: 10px;
+    margin-top:10px;
+}
+
+.cart_row{
+    display: flex;
+}
+
+.cart_item{
+    width:35%;
+}
+
+.cart_price{
+    width:20%;
+}
+
+.cart_prices{
+    width:20%;
+    font-size: 1.2em;
+}
+
+.cart_quantity{
+    width:45%;
+}
+
+.cart_item_title{
+    padding-left: .5em;
+    font-size:1.2em;
+}
+
+.cart_item_quantity{
+    height: 30px;
+    width:50px;
+    border-radius: .3em;
+    border:5px;
+    border: 1px solid rgb(0, 53, 228); 
+    text-align: center;
+    margin-right:2em;
+    padding:0;
+}
+
+.cart_row:last-child{
+    border-bottom: 2px solid black;
+}
+
+.cart_row:last-child .cart_column{
+    border:none;
+}
+
+.cart_total{
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: end;
+}
+
+.cart_total_title{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.cart_total_price{
+    font-size: 1.2em;
+}
+
+.btn_purchase{
+    display:block;
+    margin: 20px auto 40px auto;
+    background-color:rgb(4, 162, 224);
+    font-size:1.3em;
+}

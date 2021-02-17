@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>The Hunter | STORE</title>
+        <meta name='descrption' content='Store Page'>
+        <link href="/styles.css" rel="stylesheet" type='text/css'>
+        <script src="../store.js" async></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <body>
+        <header class='main_header'>
+            <%- include('partials/header.ejs')%>
+        </header>
+
+        <section class='content container'>
+            <h2 class='section_header'>MUSIC</h2>
+
+
+            <div class="shop_items">
+                <div class="shop_item">
+                    <div>
+                        <span class="shop_item_title"> ALBUM 1</span>
+                    </div>
+                    
+                    <img class='shop_item_image' src="../images/Album 1.png">
+                    <div class="shop_item_details">
+                        <strong class="shop_item_price">$20.99</strong>
+                        <button class= 'btn btn_primary shop_item_btn' role="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop_item">
+                    <div>
+                        <span class="shop_item_title"> ALBUM 2</span>
+                    </div>
+                    
+                    <img class='shop_item_image' src="../images/Album 2.png">
+                    <div class="shop_item_details">
+                        <strong class="shop_item_price">$10.99</strong>
+                        <button class= 'btn btn_primary shop_item_btn' role="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop_item">
+                    <div>
+                        <span class="shop_item_title"> ALBUM 3</span>
+                    </div>
+                    
+                    <img class='shop_item_image' src="../images/Album 3.png">
+                    <div class="shop_item_details">
+                        <strong class="shop_item_price">$30.99</strong>
+                        <button class= 'btn btn_primary shop_item_btn' role="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class='content container'>
+            <h2 class="section_header">MERCH</h2>
+
+            <div class="shop_items">
+                <div class="shop_item">
+                    <div>
+                        <span class="shop_item_title"> SHIRT</span>
+                    </div>
+                    
+                    <img class='shop_item_image' src="../images/Shirt.png">
+                    <div class="shop_item_details">
+                        <strong class="shop_item_price">$5.99</strong>
+                        <button class= 'btn btn_primary shop_item_btn' role="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop_item">
+                    <div>
+                        <span class="shop_item_title">COFFEE</span>
+                    </div>
+                    
+                    <img class='shop_item_image' src="../images/Cofee.png">
+                    <div class="shop_item_details">
+                        <strong class="shop_item_price">$3.99</strong>
+                        <button class= 'btn btn_primary shop_item_btn' role="button">ADD TO CART</button>
+                    </div>
+                </div>
+        </section>
+
+        <section class='content container'>
+            <h2 class="section_header">CART</h2>
+
+            <div class="cart_row">
+                <strong class="cart_item cart_header cart_column">ITEM</strong>
+                <strong class="cart_price cart_header cart_column">PRICE</strong>
+                <strong class="cart_quantity cart_header cart_column">QUANTITY</strong>
+            </div>
+
+            <div class="cart_items">
+
+                <div class="cart_row">
+                    <div class="cart_item cart_column">
+                        <img src="../images/Shirt.png" width="75" height="auto">
+                        <span class="cart_item_title">SHIRT</span>
+                    </div>
+                    
+                    <span class="cart_prices cart_column"> $5.99</span>
+
+                    <div class="cart_quantity cart_column">
+                        <input class="cart_item_quantity" type="number" value="1">
+                        <button class="btn btn_danger " role="button">REMOVE</button>
+
+                    </div>
+                    
+                </div>
+
+           
+
+                <div class="cart_row">
+                    <div class="cart_item cart_column">
+                        <img src="../images/Cofee.png" width="75" height="auto">
+                        <span class="cart_item_title">COFFEE</span>
+                    </div>
+                    
+                    <span class="cart_prices cart_column"> $2.99</span>
+
+                    <div class="cart_quantity cart_column">
+                        <input class="cart_item_quantity" type="number" value="1">
+                        <button class="btn btn_danger " role="button">REMOVE</button>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="cart_total">
+                <strong class="cart_total_title">Total</strong>
+                <span class="cart_total_price">$0</span>
+            </div>
+
+            <button class="btn btn_primary btn_purchase" role="button">PURCHASE</button>
+        </section>
+
+        <footer class="main_footer">
+            <%- include('partials/footer.ejs')%>
+        </footer>
+    </body>
+</html>
