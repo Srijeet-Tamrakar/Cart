@@ -1,0 +1,19 @@
+:root{
+  --light-blue: #236B8E;
+  --dark-blue: #3299CC;
+  --dark-green: #008080   ;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+h2, h3{
+  font-family: 'Concert One', cursive;
+  color: #355c7d;
+}
+
+.nav-link{
+  color: #fdc029;
+}
